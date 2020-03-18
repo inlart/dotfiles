@@ -1,0 +1,155 @@
+# mod key
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# terminal emulator
+set $term st
+
+# application launcher
+set $menu rofi -show drun -line 3 -eh 2 -width 25 -padding 40 -font "Ubuntu Condensed 9" | xargs swaymsg exec --
+
+# output configuration
+output DP-4 res 1920x1080@144Hz pos 0,0 bg ~/theme/wallpaper.png fill
+output HDMI-A-3 res 1920x1080@60Hz pos 1920,0 bg ~/theme/wallpaper.png fill
+
+# keyboard layout
+input type:keyboard {
+	xkb_layout usde
+}
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+    # Lock sway
+    bindsym $mod+l exec swaylock -f -i ~/theme/wallpaper.png
+#
+# Moving around:
+#
+    # move to window
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # move window to
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+    # switch to workspace
+    bindsym $mod+1 workspace 1
+    bindsym $mod+2 workspace 2
+    bindsym $mod+3 workspace 3
+    bindsym $mod+4 workspace 4
+    bindsym $mod+5 workspace 5
+    bindsym $mod+6 workspace 6
+    bindsym $mod+7 workspace 7
+    bindsym $mod+8 workspace 8
+    bindsym $mod+9 workspace 9
+    bindsym $mod+0 workspace 10
+    # move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace 1
+    bindsym $mod+Shift+2 move container to workspace 2
+    bindsym $mod+Shift+3 move container to workspace 3
+    bindsym $mod+Shift+4 move container to workspace 4
+    bindsym $mod+Shift+5 move container to workspace 5
+    bindsym $mod+Shift+6 move container to workspace 6
+    bindsym $mod+Shift+7 move container to workspace 7
+    bindsym $mod+Shift+8 move container to workspace 8
+    bindsym $mod+Shift+9 move container to workspace 9
+    bindsym $mod+Shift+0 move container to workspace 10
+    # bnd workspace to monitor
+    workspace 1 output DP-4
+#
+# Layout stuff:
+#
+    # horizontal or vertical split
+    bindsym $mod+h splith
+    bindsym $mod+v splitv
+
+    # switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # mke the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # togle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # sap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # mve focus to the parent container
+    bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+    # move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # show the next scratchpad window or hide the focused scratchpad window.
+    bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+mode "resize" {
+    # resize
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#
+# Status Bar:
+#
+
+exec_always ~/.config/waybar/launch.sh
+
+
+default_border pixel 1
+
+# gaps
+for_window [class=".*"] border pixel 1
+gaps inner 15
+gaps outer 0
+
+include /etc/sway/config.d/*
