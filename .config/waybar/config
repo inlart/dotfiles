@@ -22,7 +22,7 @@
         "tooltip": false
     },
     "cpu": {
-        "interval": 10,
+        "interval": 2,
         "format": "{}% ",
         "max-length": 10
     },
