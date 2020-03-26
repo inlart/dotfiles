@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/martin/.oh-my-zsh"
 
 # theme
-ZSH_THEME="alpha"
+ZSH_THEME="lambda"
 
 # case sensitive completion
 CASE_SENSITIVE="true"
@@ -36,3 +36,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.aliasrc ]; then
 	source ~/.aliasrc
 fi
+
+LC_ALL=en_US.UTF-8
