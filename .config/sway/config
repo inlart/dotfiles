@@ -50,6 +50,11 @@ input type:keyboard {
 
     # Lock sway
     bindsym $mod+l exec swaylock -f -i ~/theme/wallpaper.png
+
+    # Media keybinds
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
 #
 # Moving around:
 #
