@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # terminal emulator
-set $term st
+set $term alacritty
 
 # application launcher
 set $menu rofi -show drun -line 3 -eh 2 -width 25 -padding 40 -font "Ubuntu Condensed 9" | xargs swaymsg exec --
@@ -149,12 +149,16 @@ bindsym $mod+r mode "resize"
 
 exec_always ~/.config/waybar/launch.sh
 
+# Notification daemon
+exec mako
 
-default_border pixel 1
+default_border pixel 2
 
 # gaps
-for_window [class=".*"] border pixel 1
-gaps inner 15
+for_window [class=".*"] border pixel 2
+gaps inner 4
 gaps outer 0
 
 include /etc/sway/config.d/*
+include ~/.config/sway/config.d/*
+
