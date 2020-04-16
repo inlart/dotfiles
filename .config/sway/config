@@ -11,7 +11,7 @@ set $right l
 set $term alacritty
 
 # application launcher
-set $menu rofi -show drun -line 3 -eh 2 -width 25 -padding 40 -font "Ubuntu Condensed 9" | xargs swaymsg exec --
+set $menu rofi -show drun -font "Ubuntu Condensed 10" | xargs swaymsg exec --
 
 # output configuration
 output DP-4 res 1920x1080@144Hz pos 0,0 bg ~/theme/wallpaper.png fill
@@ -158,6 +158,11 @@ default_border pixel 2
 for_window [class=".*"] border pixel 2
 gaps inner 4
 gaps outer 0
+
+# class                  border  backgr. text    indicator child_border
+client.focused           #FFFFFF #FFFFFF #777777 #FFFFFF   #FFFFFF
+client.focused_inactive  #5C6370 #3B3228 #FFFFFF #5C6370   #5C6370
+client.unfocused         #5C6370 #3B3228 #FFFFFF #5C6370   #5C6370
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
