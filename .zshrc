@@ -13,9 +13,6 @@ CASE_SENSITIVE="true"
 # disable the auto update
 DISABLE_AUTO_UPDATE="true"
 
-# Uncomment the following line to automatically update without prompting.
-DISABLE_UPDATE_PROMPT="true"
-
 # disable dirty check for untracked files
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
