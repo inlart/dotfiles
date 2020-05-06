@@ -11,7 +11,7 @@ set $right l
 set $term alacritty
 
 # application launcher
-set $menu rofi -show drun -font "Ubuntu Condensed 10" | xargs swaymsg exec --
+set $menu exec /home/martin/bin/runrofi.sh -show drun
 
 # output configuration
 output DP-4 res 1920x1080@144Hz pos 0,0 bg ~/theme/wallpaper.png fill
@@ -145,9 +145,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# ---
-# status bar
+# screenshot
+bindsym $mod+print exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
+# status bar
 exec_always ~/.config/waybar/launch.sh
 
 # notification daemon
