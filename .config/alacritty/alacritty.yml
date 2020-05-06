@@ -21,6 +21,12 @@ colors:
         cyan:    '0x29E6D0'
         white:   '0xEEEEEE'
 font:
-  size: 10.0
+  size: 10
+  normal:
+    family: DejaVu Sans Mono
+  bold:
+    family: DejaVu Sans Mono
+  italic:
+    family: DejaVu Sans Mono
 live_config_reload: true
 
