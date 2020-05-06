@@ -67,7 +67,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "scroll-step": 1,
+        "scroll-step": 5,
         "on-click": "pavucontrol"
     },
     "tray": {
