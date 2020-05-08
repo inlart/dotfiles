@@ -52,14 +52,10 @@
         "tooltip": false
     },
     "network": {
-        "format": "{ipaddr}/{cidr} {icon}",
-        "format-icons": {
-            "wifi": ["", "" ,""],
-            "ethernet": [""],
-            "disconnected": [""]
-        },
-        "on-click": "st -e nmtui",
-    "tooltip": false
+        "interface": "enp4s0",
+        "interval": 1,
+        "format": "{bandwidthDownBits}  {bandwidthUpBits} ",
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
