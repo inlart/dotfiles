@@ -11,8 +11,15 @@
         "format": " {}"
     },
     "sway/workspaces": {
-        "format": "{name}",
-        "disable-scroll": true
+        "format": "<span font='12'>{icon}</span>{name}",
+        "disable-scroll": true,
+        "format-icons": {
+            "1": " ",
+            "3": " ",
+            "4": " ",
+            "10": " ",
+            "default": " "
+        }
     },
     "sway/window": {
         "max-length": 80,
