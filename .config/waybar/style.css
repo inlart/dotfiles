@@ -1,16 +1,16 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: DejaVu Sans;
-	font-size: 15px;
+	font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
+	font-size: 14px;
 	box-shadow: none;
 	text-shadow: none;
 	transition-duration: 0.3s;
 }
 
 window#waybar {
-	color: rgba(222, 222, 222, 0.85);
-	background: rgba(35, 31, 32, 0.4);
+	color: rgba(204, 204, 204, 1);
+	background: rgba(14, 14, 14, 0.8);
 }
 
 #workspaces {
@@ -36,11 +36,8 @@ window#waybar {
 
 #clock,
 #battery,
-#cpu,
-#memory,
 #temperature,
 #backlight,
-#network,
 #pulseaudio,
 #custom-media,
 #tray,
@@ -52,25 +49,32 @@ window#waybar {
 	color: rgb(255, 255, 255);
 }
 
-#battery.charging {
-	color: rgb(255, 255, 255);
-	background-color: rgb(38, 166, 91);
+#cpu,
+#memory {
+	padding: 0 5px;
+	margin: 0 4px;
+	color: rgb(0, 179, 113);
 }
 
-@keyframes blink {
-	to {
-		background-color: rgb(255, 255, 255);
-		color: rgb(0, 0, 0);
-	}
+
+#cpu.warning,
+#memory.warning {
+	color: rgb(179, 107, 0);
 }
 
-#battery.critical:not(.charging) {
-	color: rgb(245, 60, 60);
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+#cpu.critical,
+#memory.critical {
+	color: rgb(179, 30, 45);
+}
+
+#network {
+	padding: 0 5px;
+	margin: 0 4px;
+	color: rgb(0, 179, 113);
+}
+
+#network.disconnected {
+	color: rgb(179, 30, 45);
 }
 
 label:focus {
