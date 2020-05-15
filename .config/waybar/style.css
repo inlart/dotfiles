@@ -56,6 +56,10 @@ window#waybar {
 	color: rgb(0, 179, 113);
 }
 
+#cpu.used,
+#memory.used {
+	color: rgb(179, 152, 0);
+}
 
 #cpu.warning,
 #memory.warning {

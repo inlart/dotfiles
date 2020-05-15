@@ -34,6 +34,7 @@
         "interval": 2,
         "format": "",
         "states": {
+            "used": 25,
             "warning": 50,
             "critical": 90
         },
@@ -44,6 +45,7 @@
         "interval": 5,
         "format": "",
         "states": {
+            "used": 25,
             "warning": 50,
             "critical": 90
         },
