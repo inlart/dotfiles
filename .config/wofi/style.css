@@ -1,0 +1,37 @@
+window {
+    margin: 5px;
+    background-color: rgba(20, 20, 20, 0.95);
+    border-radius: 5px;
+    font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
+}
+
+#outer-box {
+    margin: 10px;
+}
+
+#input {
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+}
+
+#inner-box {
+    margin: 0px;
+}
+
+#scroll {
+    margin: 5px;
+    background-color: rgba(61, 61, 61, 0.95);
+    border-radius: 5px;
+}
+
+#text {
+    margin: 2px;
+}
+
+#entry {
+}
+
+#entry:selected {
+    background-color: rgba(0, 131, 179, 0.95);
+}

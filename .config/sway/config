@@ -11,7 +11,7 @@ set $right l
 set $term alacritty
 
 # application launcher
-set $menu exec /home/martin/bin/runrofi.sh -show drun
+set $menu exec wofi
 
 # output configuration
 output DP-4 res 1920x1080@144Hz pos 0,0 bg ~/theme/wallpaper.png fill
