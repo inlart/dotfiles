@@ -43,7 +43,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # lock sway
-bindsym $mod+l exec swaylock -f -i ~/theme/wallpaper.png
+bindsym $mod+l exec swaylock -f -S
 
 # media keybinds
 bindsym XF86AudioPlay exec playerctl play-pause
