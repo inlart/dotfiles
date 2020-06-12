@@ -13,10 +13,6 @@ set $term alacritty
 # application launcher
 set $menu exec wofi
 
-# output configuration
-output DP-4 res 1920x1080@144Hz pos 0,0 bg ~/theme/wallpaper.png fill
-output HDMI-A-3 res 1920x1080@60Hz pos 1920,0 bg ~/theme/wallpaper.png fill
-
 # keyboard layout
 input type:keyboard {
 	xkb_layout usde
@@ -91,9 +87,6 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-
-# bind workspace to monitor
-workspace 1 output DP-4
 
 # ---
 # layout
