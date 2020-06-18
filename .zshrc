@@ -21,17 +21,18 @@ HIST_STAMPS="dd.mm.yyyy"
 
 # used plugins
 plugins=(
-	git
-	archlinux
-	colored-man-pages
-	fzf
+    git
+    archlinux
+    colored-man-pages
+    fzf
+    z
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # source aliases
 if [ -f ~/.aliasrc ]; then
-	source ~/.aliasrc
+    source ~/.aliasrc
 fi
 
 LC_ALL=en_US.UTF-8

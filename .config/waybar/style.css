@@ -1,37 +1,37 @@
 * {
-	border: none;
-	border-radius: 0;
-	font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
-	font-size: 14px;
-	box-shadow: none;
-	text-shadow: none;
-	transition-duration: 0.3s;
+    border: none;
+    border-radius: 0;
+    font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
+    font-size: 14px;
+    box-shadow: none;
+    text-shadow: none;
+    transition-duration: 0.3s;
 }
 
 window#waybar {
-	color: rgba(204, 204, 204, 1);
-	background: rgba(14, 14, 14, 0.8);
+    color: rgba(204, 204, 204, 1);
+    background: rgba(14, 14, 14, 0.8);
 }
 
 #workspaces {
-	margin: 0 5px;
+    margin: 0 5px;
 }
 
 #workspaces button {
-	padding: 0 5px;
-	color: rgba(172, 172, 172, 0.9);
+    padding: 0 5px;
+    color: rgba(172, 172, 172, 0.9);
 }
 
 #workspaces button.visible {
-	color: rgba(222, 222, 222, 1);
+    color: rgba(222, 222, 222, 1);
 }
 
 #workspaces button.focused {
-	border-top: 3px solid rgba(222, 222, 222, 1);
+    border-top: 3px solid rgba(222, 222, 222, 1);
 }
 
 #workspaces button.urgent {
-	color: rgb(245, 60, 60);
+    color: rgb(245, 60, 60);
 }
 
 #clock,
@@ -44,43 +44,43 @@ window#waybar {
 #mode,
 #idle_inhibitor,
 #mpd {
-	padding: 0 5px;
-	margin: 0 4px;
-	color: rgb(255, 255, 255);
+    padding: 0 5px;
+    margin: 0 4px;
+    color: rgb(255, 255, 255);
 }
 
 #cpu,
 #memory {
-	padding: 0 5px;
-	margin: 0 4px;
-	color: rgb(0, 179, 113);
+    padding: 0 5px;
+    margin: 0 4px;
+    color: rgb(0, 179, 113);
 }
 
 #cpu.used,
 #memory.used {
-	color: rgb(179, 152, 0);
+    color: rgb(179, 152, 0);
 }
 
 #cpu.warning,
 #memory.warning {
-	color: rgb(179, 107, 0);
+    color: rgb(179, 107, 0);
 }
 
 #cpu.critical,
 #memory.critical {
-	color: rgb(179, 30, 45);
+    color: rgb(179, 30, 45);
 }
 
 #network {
-	padding: 0 5px;
-	margin: 0 4px;
-	color: rgb(0, 179, 113);
+    padding: 0 5px;
+    margin: 0 4px;
+    color: rgb(0, 179, 113);
 }
 
 #network.disconnected {
-	color: rgb(179, 30, 45);
+    color: rgb(179, 30, 45);
 }
 
 label:focus {
-	background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }

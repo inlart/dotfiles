@@ -15,7 +15,7 @@ set $menu exec wofi
 
 # keyboard layout
 input type:keyboard {
-	xkb_layout usde
+    xkb_layout usde
 }
 
 # ---
