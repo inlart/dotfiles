@@ -10,7 +10,7 @@
 
 window#waybar {
     color: rgba(204, 204, 204, 1);
-    background: rgba(14, 14, 14, 0.8);
+    background: rgba(14, 14, 14, 1);
 }
 
 #workspaces {
