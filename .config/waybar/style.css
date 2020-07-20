@@ -9,8 +9,8 @@
 }
 
 window#waybar {
-    color: rgba(204, 204, 204, 1);
-    background: rgba(14, 14, 14, 1);
+    background: rgba(0,0,0,0);
+    background-image: linear-gradient(90deg, rgba(94, 13, 112, 0.7), rgba(0, 52, 71, 0.7));
 }
 
 #workspaces {
@@ -23,15 +23,19 @@ window#waybar {
 }
 
 #workspaces button.visible {
-    color: rgba(222, 222, 222, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 #workspaces button.focused {
-    border-top: 3px solid rgba(222, 222, 222, 1);
+    border-top: 3px solid rgba(255, 255, 255, 1);
 }
 
 #workspaces button.urgent {
     color: rgb(245, 60, 60);
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 #clock,
