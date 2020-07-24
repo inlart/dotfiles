@@ -1,7 +1,7 @@
 window {
     margin: 5px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(270deg, rgba(94, 13, 112, 0.9), rgba(0, 52, 71, 0.9));
+    background-image: linear-gradient(270deg, rgba(94, 13, 112, 1), rgba(0, 52, 71, 1));
     border-radius: 5px;
     font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
 }
