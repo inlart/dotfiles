@@ -1,30 +1,15 @@
-CURRENT_BG='NONE'
-CURRENT_FG='black'
-
-() {
-    local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-    SEGMENT_SEPARATOR=$'\ue0b0'
-}
-
 prompt_segment() {
-    local bg fg
-    [[ -n $1 ]] && bg="%K{$1}" || bg="%k"
-    [[ -n $2 ]] && fg="%B%F{$2}" || fg="%b%f"
-    if [[ $CURRENT_BG != 'NONE' && $1 != $CURRENT_BG ]]; then
-        echo -n " %{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%} "
-    else
-        echo -n "%{$bg%}%{$fg%} "
-    fi
-    CURRENT_BG=$1
-    [[ -n $3 ]] && echo -n $3
+    local fg
+    [[ -n $1 ]] && fg="%B%F{$1}" || fg="%b%f"
+    echo -n "%{$fg%}"
+    [[ -n $2 ]] && echo -n $2
 }
 
 prompt_status() {
-    local bg
-    bg='green'
-    [[ $RETVAL -ne 0 ]] && bg='red'
+    fg='white'
+    [[ $RETVAL -ne 0 ]] && fg='red'
 
-    prompt_segment $bg $CURRENT_FG "λ"
+    prompt_segment $fg " λ"
 }
 
 prompt_dir() {
@@ -39,7 +24,7 @@ prompt_dir() {
         local parent=${git_root%\/*}
         prompt_short_dir=${PWD#$parent/}
     fi
-    prompt_segment '' white $prompt_short_dir
+    prompt_segment blue " $prompt_short_dir"
 }
 
 prompt_git() {
@@ -47,17 +32,12 @@ prompt_git() {
     if [[ "$(git config --get oh-my-zsh.hide-status 2>/dev/null)" = 1 ]]; then
         return
     fi
-    prompt_segment '' cyan "$(git_prompt_info)"
+    GIT_PROMPT=$(git_prompt_info)
+    [[ -n $GIT_PROMPT ]] && prompt_segment white " $(git_prompt_info)"
 }
 
 prompt_end() {
-    if [[ -n $CURRENT_BG ]]; then
-        echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-    else
-        echo -n "%{%k%}"
-    fi
     echo -n "%{%b%f%} "
-    CURRENT_BG=''
 }
 
 build_prompt() {
@@ -72,5 +52,6 @@ PROMPT='%{%f%b%k%}$(build_prompt)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=""
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_DIRTY=" %F{red}Δ%f"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %F{cyan}+%f"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
+
