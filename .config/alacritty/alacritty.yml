@@ -1,27 +1,39 @@
+env:
+    TERM: xterm-256color
+window:
+    padding:
+        x: 2
+        y: 2
+    dynamic_padding: false
+    decorations: none
+scrolling:
+    history: 10000
+    multiplier: 8
+draw_bold_text_with_bright_colors: true
 colors:
     primary:
-        background: '0x141414'
-        foreground: '0xCCCCCC'
+        background: '#141414'
+        foreground: '#CCCCCC'
     normal:
-        black:   '0x141414'
-        red:     '0xB31E2D'
-        green:   '0x00B371'
-        yellow:  '0xB39800'
-        blue:    '0x0083B3'
-        magenta: '0xA159B3'
-        cyan:    '0x20B3A2'
-        white:   '0xCCCCCC'
+        black:   '#141414'
+        red:     '#B31E2D'
+        green:   '#00B371'
+        yellow:  '#B39800'
+        blue:    '#0083B3'
+        magenta: '#A159B3'
+        cyan:    '#20B3A2'
+        white:   '#CCCCCC'
     bright:
-        black:   '0x777777'
-        red:     '0xE6273A'
-        green:   '0x00E692'
-        yellow:  '0xE6C400'
-        blue:    '0x00A8E6'
-        magenta: '0xCF73E6'
-        cyan:    '0x29E6D0'
-        white:   '0xEEEEEE'
+        black:   '#777777'
+        red:     '#E6273A'
+        green:   '#00E692'
+        yellow:  '#E6C400'
+        blue:    '#00A8E6'
+        magenta: '#CF73E6'
+        cyan:    '#29E6D0'
+        white:   '#EEEEEE'
 font:
-  size: 10
+  size: 10.5
   normal:
     family: DejaVu Sans Mono
   bold:
@@ -29,4 +41,19 @@ font:
   italic:
     family: DejaVu Sans Mono
 live_config_reload: true
+background_opacity: 1.0
+dynamic_title: true
+cursor:
+    style: Block
+    unfocused_hollow: true
+shell:
+    program: /usr/bin/zsh
+mouse:
+    double_click: { threshold: 200 }
+    triple_click: { threshold: 200 }
+    hide_when_typing: false
+    url:
+        launcher:
+            program: xdg-open
+            args: []
 
