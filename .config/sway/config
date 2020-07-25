@@ -141,18 +141,8 @@ bindsym $mod+r mode "resize"
 # screenshot
 bindsym $mod+print exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
-# status bar
-exec_always ~/.config/waybar/launch.sh
-
-# notification daemon
-exec mako
-
-# polkit
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
 # border
 default_border pixel 2
-for_window [class=".*"] border pixel 2
 
 # gaps
 gaps inner 4
