@@ -1,5 +1,5 @@
 # update path
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # oh-my-zsh installation
 export ZSH="/home/martin/.oh-my-zsh"
@@ -36,3 +36,4 @@ if [ -f ~/.aliasrc ]; then
 fi
 
 LC_ALL=en_US.UTF-8
+
