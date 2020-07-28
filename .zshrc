@@ -7,8 +7,8 @@ export ZSH="/home/martin/.oh-my-zsh"
 # theme
 ZSH_THEME="lambda"
 
-# case sensitive completion
-CASE_SENSITIVE="true"
+# case insensitive completion
+CASE_SENSITIVE="false"
 
 # disable the auto update
 DISABLE_AUTO_UPDATE="true"
@@ -26,6 +26,8 @@ plugins=(
     colored-man-pages
     fzf
     z
+    catimg
+    wd
 )
 
 source $ZSH/oh-my-zsh.sh
