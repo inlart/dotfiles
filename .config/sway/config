@@ -39,7 +39,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 # lock sway
-bindsym $mod+l exec swaylock -f -S
+bindsym $mod+p exec swaylock -f -S
 
 # media keybinds
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -55,11 +55,22 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
 # move window to
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
 # ---
 # workspaces
@@ -92,7 +103,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # layout
 
 # horizontal or vertical split
-bindsym $mod+h splith
+bindsym $mod+b splith
 bindsym $mod+v splitv
 
 # switch the current container between different layout styles
