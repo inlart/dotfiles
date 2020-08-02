@@ -6,6 +6,7 @@ window:
         y: 2
     dynamic_padding: false
     decorations: none
+    dynamic_title: true
 scrolling:
     history: 10000
     multiplier: 8
@@ -42,7 +43,6 @@ font:
     family: DejaVu Sans Mono
 live_config_reload: true
 background_opacity: 1.0
-dynamic_title: true
 cursor:
     style: Block
     unfocused_hollow: true
