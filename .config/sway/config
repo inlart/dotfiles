@@ -164,6 +164,11 @@ client.focused           #FFFFFF #FFFFFF #777777 #FFFFFF   #FFFFFF
 client.focused_inactive  #5C6370 #3B3228 #FFFFFF #5C6370   #5C6370
 client.unfocused         #5C6370 #3B3228 #FFFFFF #5C6370   #5C6370
 
+# bar
+bar {
+    swaybar_command waybar
+}
+
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
 
