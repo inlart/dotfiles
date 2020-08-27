@@ -1,6 +1,6 @@
 # dotfiles
 
-![Result](https://i.imgur.com/tgfQeWS.png)
+![Result](https://i.imgur.com/ruWxqxQ.png)
 
 ## included configs
 
