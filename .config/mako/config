@@ -3,4 +3,9 @@ font=DejaVu Sans 10
 background-color=#FFFFFFFF
 text-color=#141414FF
 border-color=#141414FF
-default-timeout=5000
+default-timeout=10000
+
+[urgency=high]
+ignore-timeout=1
+default-timeout=0
+border-color=#c00000
