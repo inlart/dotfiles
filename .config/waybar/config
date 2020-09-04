@@ -6,7 +6,7 @@
 
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
-    "modules-right": ["cpu", "memory", "network", "pulseaudio", "clock", "tray"],
+    "modules-right": ["cpu", "memory", "custom/network", "pulseaudio", "clock", "tray"],
     "sway/mode": {
         "format": " {}"
     },
@@ -52,13 +52,11 @@
         "max-length": 10,
         "tooltip": true
     },
-    "network": {
-        "interface": "enp4s0",
-        "interval": 1,
-        "format": "{icon}",
-        "format-ethernet": "",
-        "tooltip-format": "{bandwidthDownBits}  {bandwidthUpBits} ",
-        "tooltip": true
+    "custom/network": {
+        "exec": "$HOME/.config/waybar/modules/network.sh 2> /dev/null",
+        "interval": 5,
+        "format": "",
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{icon}",

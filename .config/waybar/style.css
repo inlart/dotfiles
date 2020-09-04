@@ -75,13 +75,17 @@ window#waybar {
     color: rgb(179, 30, 45);
 }
 
-#network {
+#custom-network {
     padding: 0 5px;
     margin: 0 4px;
     color: rgb(0, 179, 113);
 }
 
-#network.disconnected {
+#custom-network.limited {
+    color: rgb(179, 152, 0);
+}
+
+#custom-network.none {
     color: rgb(179, 30, 45);
 }
 
