@@ -18,6 +18,9 @@ input type:keyboard {
     xkb_layout usde
 }
 
+# font
+font pango:DejaVu Sans Mono 10
+
 # ---
 # key bindings
 
