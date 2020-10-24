@@ -11,4 +11,4 @@
 * [alacritty](https://github.com/alacritty/alacritty) (terminal emulator)
 * [wofi](https://hg.sr.ht/~scoopta/wofi) (application launcher)
 * [mako](https://github.com/emersion/mako) (notification daemon)
-* firefox (web browser)
+* [firefox](https://hg.mozilla.org/mozilla-central) (web browser)
