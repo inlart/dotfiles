@@ -7,9 +7,13 @@ prompt_segment() {
 
 prompt_status() {
     fg='white'
-    [[ $RETVAL -ne 0 ]] && fg='red'
+    text='λ'
+    [[ $RETVAL -ne 0 ]] && {
+        fg='red'
+        text="$text.$RETVAL"
+    }
 
-    prompt_segment $fg "λ"
+    prompt_segment $fg $text
 }
 
 prompt_dir() {
