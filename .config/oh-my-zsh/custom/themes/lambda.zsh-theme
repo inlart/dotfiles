@@ -6,8 +6,8 @@ prompt_segment() {
 }
 
 prompt_status() {
-    fg='white'
-    text='λ'
+    local fg='white'
+    local text='λ'
     [[ $RETVAL -ne 0 ]] && {
         fg='red'
         text="$text.$RETVAL"

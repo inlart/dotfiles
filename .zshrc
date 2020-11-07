@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # oh-my-zsh installation
-export ZSH="/home/martin/.oh-my-zsh"
+export ZSH=~/.config/oh-my-zsh
 
 # theme
 ZSH_THEME="lambda"
