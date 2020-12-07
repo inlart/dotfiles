@@ -28,6 +28,7 @@ plugins=(
     z
     catimg
     wd
+    encode64
 )
 
 source $ZSH/oh-my-zsh.sh
