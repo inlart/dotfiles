@@ -2,6 +2,7 @@ call plug#begin('~/local/share/nvim/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 
 call plug#end()
 
@@ -30,5 +31,11 @@ cmap w!! w !sudo tee > /dev/null %
 
 let g:lightline = {
       \ 'colorscheme': 'powerline',
+      \ 'active': {
+      \   'left': [ ['mode', 'paste'],
+      \             ['gitbranch', 'readonly', 'filename', 'modified'] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
       \ }
-
