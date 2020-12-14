@@ -1,34 +1,44 @@
-call plug#begin('~/local/share/nvim/plugged')
+"  _       _            _
+" (_)     | |          | |
+"  _ _ __ | | __ _ _ __| |
+" | | '_ \| |/ _` | '__| __|
+" | | | | | | (_| | |  | |
+" |_|_| |_|_|\__,_|_|   \__|
+"
 
-Plug 'preservim/nerdtree'
-Plug 'itchyny/lightline.vim'
-Plug 'itchyny/vim-gitbranch'
+
+" use vim-plug to manage plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'preservim/nerdtree'    " file system explorer
+Plug 'itchyny/lightline.vim' " statusline
+Plug 'itchyny/vim-gitbranch' " git branch in statusline
 
 call plug#end()
 
-syntax on
-set encoding=utf-8
-set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set laststatus=2
-set mouse=a
-set termguicolors
-set background=dark
-set noswapfile
-set linebreak
-set number
-set relativenumber
-set ignorecase
-set clipboard=unnamedplus
+syntax on                    " enable highlighting
+set encoding=utf-8           " set encoding to utf-8
+set expandtab                " insert spaces instead of tabs
+set shiftwidth=4             " four spaces indentation
+set tabstop=4                " insert four spaces for a tab
+set laststatus=2             " show lightline
+set mouse=a                  " enable mouse
+set termguicolors            " enable true colors
+set noswapfile               " disable swap file
+set linebreak                " soft wrap
+set number                   " display line number
+set relativenumber           " relative line numbers
+set ignorecase               " do case insensitive search
+set clipboard+=unnamedplus   " set clipboard
 
-set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
-
+" change line number highlight
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 cmap w!! w !sudo tee > /dev/null %
 
+"
+" lightline
+"
 let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ 'active': {
@@ -40,7 +50,9 @@ let g:lightline = {
       \ },
       \ }
 
-" NERDTree
+"
+" nerdtree
+"
 map <C-n> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
