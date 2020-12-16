@@ -13,6 +13,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'preservim/nerdtree'    " file system explorer
 Plug 'itchyny/lightline.vim' " statusline
 Plug 'itchyny/vim-gitbranch' " git branch in statusline
+Plug 'junegunn/fzf'          " fuzzy finder
 
 call plug#end()
 
@@ -57,4 +58,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
+
+"
+" fzf
+"
+
+nnoremap <silent> <C-t> :FZF<CR>
 
