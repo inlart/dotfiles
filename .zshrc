@@ -4,6 +4,10 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 # oh-my-zsh installation
 export ZSH=~/.config/oh-my-zsh
 
+# set default editor
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 # theme
 ZSH_THEME="lambda"
 
