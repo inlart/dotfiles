@@ -23,6 +23,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # date format in history
 HIST_STAMPS="dd.mm.yyyy"
 
+# don't remove spaces before "&" and "|"
+ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;'
+
 # used plugins
 plugins=(
     git
