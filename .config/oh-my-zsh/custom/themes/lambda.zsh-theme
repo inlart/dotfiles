@@ -9,8 +9,13 @@ prompt_status() {
     local fg='white'
     local text='λ'
     [[ $RETVAL -ne 0 ]] && {
-        fg='red'
-        text="$text.$RETVAL"
+        if [[ $RETVAL -eq 130 ]]; then
+            fg='yellow'
+            text="$text.INT"
+        else
+            fg='red'
+            text="$text.$RETVAL"
+        fi
     }
 
     prompt_segment $fg $text
