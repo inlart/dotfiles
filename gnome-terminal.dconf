@@ -1,0 +1,15 @@
+[/]
+default='4febcd54-c752-4f71-aa5c-5abf5871c248'
+list=['4febcd54-c752-4f71-aa5c-5abf5871c248']
+
+[:4febcd54-c752-4f71-aa5c-5abf5871c248]
+audible-bell=false
+background-color='rgb(20,20,20)'
+default-size-columns=120
+default-size-rows=30
+font='DejaVu Sans Mono 10.5'
+foreground-color='rgb(211,215,207)'
+palette=['rgb(20,20,20)', 'rgb(179,30,45)', 'rgb(0,179,113)', 'rgb(179,152,0)', 'rgb(0,131,179)', 'rgb(161,89,179)', 'rgb(32,179,162)', 'rgb(204,204,204)', 'rgb(119,119,119)', 'rgb(230,39,58)', 'rgb(0,230,146)', 'rgb(230,196,0)', 'rgb(0,168,230)', 'rgb(207,115,230)', 'rgb(41,230,208)', 'rgb(238,238,238)']
+use-system-font=false
+use-theme-colors=false
+visible-name='inlart'
