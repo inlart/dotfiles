@@ -13,11 +13,6 @@ set $term alacritty
 # application launcher
 set $menu exec wofi
 
-# keyboard layout
-input type:keyboard {
-    xkb_layout usde
-}
-
 # font
 font pango:DejaVu Sans Mono 10
 
