@@ -1,3 +1,7 @@
+* {
+    color: rgba(255, 255, 255, 1);
+}
+
 window {
     margin: 5px;
     background-color: rgba(0, 19, 26, 0.95);
