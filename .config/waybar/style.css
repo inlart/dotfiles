@@ -3,6 +3,7 @@
     border-radius: 0;
     font-family: DejaVu Sans, "FontAwesome 5 Free Solid";
     font-size: 14px;
+    color: rgba(255, 255, 255, 1);
     box-shadow: none;
     text-shadow: none;
     transition-duration: 0.3s;
