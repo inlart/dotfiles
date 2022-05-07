@@ -7,6 +7,7 @@ window:
   dynamic_padding: false
   decorations: none
   dynamic_title: true
+  opacity: 1.0
 scrolling:
   history: 10000
   multiplier: 8
@@ -42,7 +43,6 @@ font:
   italic:
     family: DejaVu Sans Mono
 live_config_reload: true
-background_opacity: 1.0
 cursor:
   style: Block
   unfocused_hollow: true
