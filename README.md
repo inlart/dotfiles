@@ -12,3 +12,4 @@
 * [wofi](https://hg.sr.ht/~scoopta/wofi) (application launcher)
 * [mako](https://github.com/emersion/mako) (notification daemon)
 * [firefox](https://hg.mozilla.org/mozilla-central) (web browser)
+* [starship](https://github.com/starship/starship) (prompt)
