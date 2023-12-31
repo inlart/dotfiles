@@ -1,0 +1,75 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#777777"
+blue = "#00A8E6"
+cyan = "#29E6D0"
+green = "#00E692"
+magenta = "#CF73E6"
+red = "#E6273A"
+white = "#EEEEEE"
+yellow = "#E6C400"
+
+[colors.normal]
+black = "#141414"
+blue = "#0083B3"
+cyan = "#20B3A2"
+green = "#00B371"
+magenta = "#A159B3"
+red = "#B31E2D"
+white = "#CCCCCC"
+yellow = "#B39800"
+
+[colors.primary]
+background = "#141414"
+foreground = "#CCCCCC"
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10.5
+
+[font.bold]
+family = "DejaVu Sans Mono"
+
+[font.italic]
+family = "DejaVu Sans Mono"
+
+[font.normal]
+family = "DejaVu Sans Mono"
+
+[[hints.enabled]]
+command = "xdg-open"
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Control"
+
+[mouse]
+hide_when_typing = false
+
+[scrolling]
+history = 10000
+multiplier = 8
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+dynamic_padding = false
+dynamic_title = true
+opacity = 1.0
+
+[window.padding]
+x = 2
+y = 2
