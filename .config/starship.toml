@@ -1,0 +1,50 @@
+format = """\
+  $character\
+  $status\
+  $username\
+  $hostname\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $cmd_duration\
+  $custom\
+  $line_break\
+  $jobs\
+  $battery\
+  $time\
+  """
+
+add_newline = false
+
+[character]
+success_symbol = "[λ](bold white)"
+error_symbol = "[λ](bold red)"
+vicmd_symbol = "[V](bold green)"
+
+[package]
+disabled = false
+
+[aws]
+disabled = true
+
+[line_break]
+disabled = true
+
+[status]
+disabled = false
+symbol = "✘"
+map_symbol = true
+
+[directory]
+disabled = false
+style = "bold blue"
+
+[git_branch]
+disabled = false
+style = "bold white"
+
+[git_status]
+disabled = false
+style = "bold white"
