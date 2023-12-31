@@ -49,3 +49,5 @@ LC_ALL=en_US.UTF-8
 
 bindkey "^U" backward-kill-line
 
+# starship
+eval "$(starship init zsh)"
