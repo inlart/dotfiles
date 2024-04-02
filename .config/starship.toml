@@ -19,9 +19,9 @@ format = """\
 add_newline = false
 
 [character]
-success_symbol = "[λ](bold white)"
-error_symbol = "[λ](bold red)"
-vicmd_symbol = "[V](bold green)"
+success_symbol = "[λ](bold white) "
+error_symbol = "[λ](bold red)."
+format = "$symbol"
 
 [package]
 disabled = false
@@ -34,8 +34,8 @@ disabled = true
 
 [status]
 disabled = false
-symbol = "✘"
-map_symbol = true
+symbol = ""
+map_symbol = false
 
 [directory]
 disabled = false
@@ -48,3 +48,4 @@ style = "bold white"
 [git_status]
 disabled = false
 style = "bold white"
+
