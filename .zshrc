@@ -8,9 +8,6 @@ export ZSH=~/.config/oh-my-zsh
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-# theme
-ZSH_THEME="lambda"
-
 # case insensitive completion
 CASE_SENSITIVE="false"
 
@@ -36,6 +33,7 @@ plugins=(
     catimg
     wd
     encode64
+    starship
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -49,5 +47,3 @@ LC_ALL=en_US.UTF-8
 
 bindkey "^U" backward-kill-line
 
-# starship
-eval "$(starship init zsh)"
