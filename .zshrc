@@ -48,3 +48,4 @@ LC_ALL=en_US.UTF-8
 
 bindkey "^U" backward-kill-line
 
+[[ -f "/etc/profile.d/vte.sh" ]] && source "/etc/profile.d/vte.sh"
