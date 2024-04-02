@@ -34,6 +34,7 @@ plugins=(
     wd
     encode64
     starship
+    ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
