@@ -47,7 +47,7 @@ vnoremap <S-k> :m '<-2<CR>gv=gv
 " lightline
 "
 let g:lightline = {
-      \ 'colorscheme': 'selenized_black',
+      \ 'colorscheme': 'rosepine',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['gitbranch', 'readonly', 'filename', 'modified'] ]
