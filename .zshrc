@@ -1,6 +1,9 @@
 # update path
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
+# set update mode
+zstyle ':omz:update' mode reminder
+
 # oh-my-zsh installation
 export ZSH=~/.config/oh-my-zsh
 
